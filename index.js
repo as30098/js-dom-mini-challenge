@@ -34,9 +34,9 @@ console.log('This is what the traveler object looks like: ', traveler)
     let animalPhoto = document.createElement('img')
     let sightingLink = document.createElement('a')
 
-    // add attributes
-    let photoSrc = document.querySelector(animalPhoto).setAttribute('src', sighting.photo)
-    list.append('photoSrc')
+    // // add attributes
+    // let photoSrc = document.querySelector(animalPhoto).setAttribute('src', sighting.photo)
+    // list.append('photoSrc')
 
     // relationships
     let animalsList = document.getElementById('animals')
@@ -50,3 +50,4 @@ console.log('This is what the traveler object looks like: ', traveler)
   })
 
 /***** Deliverable 5 *****/
+
