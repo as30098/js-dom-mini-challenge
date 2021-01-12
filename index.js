@@ -12,9 +12,9 @@ h1.style.color = "green"
 console.log('This is what the traveler object looks like: ', traveler)
 
 
-  console.log(traveler.name)
-  console.log(traveler.nickname)
-  console.log(traveler.photo)
+  // console.log(traveler.name)
+  // console.log(traveler.nickname)
+  // console.log(traveler.photo)
 
   let name = document.querySelector('h2')
   name.textContent = traveler.name
@@ -27,20 +27,26 @@ console.log('This is what the traveler object looks like: ', traveler)
 
 
 /***** Deliverable 4 *****/
-  // traveler.animalSightings.forEach(
-  //   // create elements
-  //   document.createElement('li')
-  //   document.createElement('p')
-  //   document.createElement('img')
-  //   document.createElement('a')
+  traveler.animalSightings.forEach(function(sighting) {
+    // create elements
+    let list = document.createElement('li')
+    let paragraph = document.createElement('p')
+    let animalPhoto = document.createElement('img')
+    let sightingLink = document.createElement('a')
 
-  //   // add attributes
+    // add attributes
+    let photoSrc = document.querySelector(animalPhoto).setAttribute('src', sighting.photo)
+    list.append('photoSrc')
 
-  //   // relationships
+    // relationships
+    let animalsList = document.getElementById('animals')
+    animalsList.append(list)
+    list.append(paragraph)
+    list.append(animalPhoto)
+    list.append(sightingLink)
+    // show on DOM
 
-  //   // show on DOM
 
-
-  // )
+  })
 
 /***** Deliverable 5 *****/
